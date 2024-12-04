@@ -33,7 +33,7 @@ If you want to further customize the plugin and the animation used, here are all
 animation:
   enabled: true # enables css animation of individual elements
   # selector to select elements in page. All elements that match the selector will be used, in the order they are found
-  selector: "audio, blockquote, div.card, div.highlighter-rouge, div.news, div.repositories, div.row, div.social, div.tag-category-list, figure, h2, h3, p, tr, video"
+  selector: "audio, blockquote, div.card, div.highlighter-rouge, div.news, div.repositories, div.row, div.social, div.tag-category-list, figure, h2, h3, ol, p, tr, ul, video"
   name: enter # name of your animation
   duration: 0.6s
   # `from` and `to` can be either a string or a hash. Here you can see an example of both usages
