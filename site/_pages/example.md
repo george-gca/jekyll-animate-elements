@@ -42,6 +42,7 @@ animation:
     transform: translateY(10px)
   to: "opacity:1;transform:none"
   delay: 100ms # delay before each consecutive animation starts
-  max_elements: 20 # maximum number of elements to animate (set to -1 to animate all elements). Note that usually not more than 20 elements need to be animated, since they will be outside the screen
+  # note that usually not more than 20 elements need to be animated, since they will be outside the screen
+  max_elements: 20 # maximum number of elements to animate (set to -1 to animate all elements)
   verbose: true
 ```
