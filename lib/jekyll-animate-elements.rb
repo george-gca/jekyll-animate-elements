@@ -16,7 +16,7 @@ Jekyll::Hooks.register([:pages, :documents], :post_render) do |page|
             # set default values
             limit = config["max_elements"] || 20
             selector = config["selector"] ||
-                "audio, blockquote, div.card, div.highlighter-rouge, div.news, div.repositories, div.row, div.social, div.tag-category-list, figure, h2, h3, p, tr, video"
+                "audio, blockquote, div.card, div.highlighter-rouge, div.news, div.repositories, div.row, div.social, div.tag-category-list, figure, h2, h3, ol, p, tr, ul, video"
 
             noko.search(selector).each_with_index do |tag, index|
                 tag[:style] = (tag[:style] || "") + "--stagger: #{index+1};"
