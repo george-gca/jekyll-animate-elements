@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/jekyll-animate-elements/assets/css/style.css">
+  </head>
+
+  <!-- Body -->
+  <body>
+    <h1 id="jekyll-animate-elements">jekyll-animate-elements</h1>
+
+<p style="--stagger: 1;" data-animate="">This plugin enables to easily use css animations to consecutively animate html elements in a Jekyll page. It was inspired by this <a href="https://antfu.me/posts/sliding-enter-animation">excellent post by Anthony Fu</a>.</p>
+
+<h2 id="installation" style="--stagger: 2;" data-animate="">Installation</h2>
+
+<ol style="--stagger: 3;" data-animate="">
+  <li>Add <code class="language-plaintext highlighter-rouge">gem 'jekyll-animate-elements'</code> to your site’s Gemfile</li>
+  <li>Add the following to your site’s <code class="language-plaintext highlighter-rouge">_config.yml</code>:</li>
+</ol>
+
+<div class="language-yml highlighter-rouge" style="--stagger: 4;" data-animate=""><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-animate-elements</span>
+</code></pre></div></div>
+
+<h2 id="usage" style="--stagger: 5;" data-animate="">Usage</h2>
+
+<p style="--stagger: 6;" data-animate="">To enable this nice default effect you see on this page, simply add this to your <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yml highlighter-rouge" style="--stagger: 7;" data-animate=""><div class="highlight"><pre class="highlight"><code><span class="na">animation</span><span class="pi">:</span>
+  <span class="na">enabled</span><span class="pi">:</span> <span class="kc">true</span> <span class="c1"># enables css animation of individual elements</span>
+</code></pre></div></div>
+
+<p style="--stagger: 8;" data-animate="">If you want to further customize the plugin and the animation used, here are all available options for you to set in your <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yml highlighter-rouge" style="--stagger: 9;" data-animate=""><div class="highlight"><pre class="highlight"><code><span class="c1"># using default values from plugin, excluding `enabled` and `verbose`</span>
+<span class="na">animation</span><span class="pi">:</span>
+  <span class="na">enabled</span><span class="pi">:</span> <span class="kc">true</span> <span class="c1"># enables css animation of individual elements</span>
+  <span class="c1"># selector to select elements in page. All elements that match the selector will be used, in the order they are found</span>
+  <span class="na">selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">audio,</span><span class="nv"> </span><span class="s">blockquote,</span><span class="nv"> </span><span class="s">div.card,</span><span class="nv"> </span><span class="s">div.highlighter-rouge,</span><span class="nv"> </span><span class="s">div.news,</span><span class="nv"> </span><span class="s">div.repositories,</span><span class="nv"> </span><span class="s">div.row,</span><span class="nv"> </span><span class="s">div.social,</span><span class="nv"> </span><span class="s">div.tag-category-list,</span><span class="nv"> </span><span class="s">figure,</span><span class="nv"> </span><span class="s">h2,</span><span class="nv"> </span><span class="s">h3,</span><span class="nv"> </span><span class="s">p,</span><span class="nv"> </span><span class="s">tr,</span><span class="nv"> </span><span class="s">video"</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">enter</span> <span class="c1"># name of your animation</span>
+  <span class="na">duration</span><span class="pi">:</span> <span class="s">0.6s</span>
+  <span class="c1"># `from` and `to` can be either a string or a hash. Here you can see an example of both usages</span>
+  <span class="na">from</span><span class="pi">:</span>
+    <span class="na">opacity</span><span class="pi">:</span> <span class="m">0</span>
+    <span class="na">transform</span><span class="pi">:</span> <span class="s">translateY(10px)</span>
+  <span class="na">to</span><span class="pi">:</span> <span class="s2">"</span><span class="s">opacity:1;transform:none"</span>
+  <span class="na">delay</span><span class="pi">:</span> <span class="s">100ms</span> <span class="c1"># delay before each consecutive animation starts</span>
+  <span class="na">max_elements</span><span class="pi">:</span> <span class="m">20</span> <span class="c1"># maximum number of elements to animate (set to -1 to animate all elements). Note that usually not more than 20 elements need to be animated, since they will be outside the screen</span>
+  <span class="na">verbose</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+  </body>
+</html>
