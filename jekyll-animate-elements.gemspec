@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["George Corrêa de Araújo"]
   s.homepage    = "https://george-gca.github.io/jekyll-animate-elements/"
   s.licenses    = ["MIT"]
-  
+
   # https://guides.rubygems.org/specification-reference/#metadata
   s.metadata      = {
     "source_code_uri" => "https://github.com/george-gca/jekyll-animate-elements",
