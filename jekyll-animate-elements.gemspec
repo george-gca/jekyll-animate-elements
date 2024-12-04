@@ -8,9 +8,16 @@ Gem::Specification.new do |s|
   s.description = "Use css animations to consecutively animate html elements in a Jekyll page."
   s.version     = Jekyll::Animate::VERSION
   s.authors     = ["George Corrêa de Araújo"]
-
-  s.homepage    = "https://github.com/george-gca/jekyll-animate-elements"
+  s.homepage    = "https://george-gca.github.io/jekyll-animate-elements/"
   s.licenses    = ["MIT"]
+  
+  # https://guides.rubygems.org/specification-reference/#metadata
+  s.metadata      = {
+    "source_code_uri" => "https://github.com/george-gca/jekyll-animate-elements",
+    "bug_tracker_uri" => "https://github.com/george-gca/jekyll-animate-elements/issues",
+    "changelog_uri"   => "https://github.com/george-gca/jekyll-animate-elements/releases",
+    "homepage_uri"    => s.homepage,
+  }
 
   all_files     = `git ls-files -z`.split("\x0")
   s.files       = all_files.grep(%r!^(lib)/!)
