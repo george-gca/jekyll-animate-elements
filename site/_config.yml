@@ -13,7 +13,7 @@ exclude:
 sass:
   sourcemap: never
   style: compressed
-  
+
 # Markdown and syntax highlight
 markdown: kramdown
 highlighter: rouge
